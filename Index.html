@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skip to Section Example</title>
+</head>
+<body>
+
+    <button onclick="scrollToSection()">Skip to Section 2</button>
+
+    <div style="height: 800px; background-color: lightblue;">
+        <h1>Section 1</h1>
+        <p>This is the first section.</p>
+    </div>
+
+    <div id="section2" style="height: 800px; background-color: lightcoral;">
+        <h1>Section 2</h1>
+        <p>This is the second section.</p>
+    </div>
+
+    <script>
+        function scrollToSection() {
+            const section = document.getElementById('section2');
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
